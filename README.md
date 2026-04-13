@@ -66,7 +66,8 @@ Add a click listener to `#action-btn` that:
 - changes `#page-title` text,
 - creates a new `<p>`,
 - adds text/classes to that `<p>`,
-- appends it to `#output`.
+- appends it to `#output`,
+- and **updates visibly on every click (counter-style behavior)**.
 
 ### TODO 8
 
@@ -82,13 +83,27 @@ Use `querySelectorAll(".card-title")` with `forEach`, then convert to array with
 
 ## Commit expectations
 
-Commit as you make progress (not one giant commit at the end).
+Commit early and often.  
+Do **not** wait to commit large chunks.
+
+- Make a commit whenever you complete a TODO or small working step.
+- Your history should show progress across the lab, not one big final commit.
 
 ## What to submit
 
 1. Pushed GitHub repo with completed TODOs.
-2. Required video explain-back (per assignment instructions).
-3. Written supplement (`dom-reflection.md` or handwritten/photo).
+2. One screenshot showing live DOM manipulation in DevTools on a site of your choice.
+3. Required 4–6 minute video explain-back of your code and debugging process.
+
+## Video requirements (required)
+
+Your video must clearly show and explain:
+
+- one fragile selector and your stable replacement,
+- one null guard,
+- one debugging moment (what broke and how you fixed it),
+- one code block you wrote and what problem it solved,
+- your counter-style click behavior from TODO 7.
 
 ## Quick self-check
 
@@ -97,6 +112,6 @@ Before submitting, make sure:
 - the app runs,
 - no major console errors,
 - all TODOs are completed,
-- your selectors and null guard are visible in `src/main.js`.
-- your commit history shows progress, not just one big commit at the end.
-- your video (as browser link 🔗) and written supplement are ready to go.
+- your selectors and null guard are visible in `src/main.js`,
+- your commit history shows frequent progress (not one big commit),
+- your screenshot and required video are ready to submit.
