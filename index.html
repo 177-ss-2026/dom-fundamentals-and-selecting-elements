@@ -4,16 +4,72 @@
     <meta charset="UTF-8" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="/src/style.css" rel="stylesheet">
+    <link href="/src/style.css" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-tailwind-js-template</title>
+    <title>DOM Fundamentals + Selectors Lab</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    
+  <body class="bg-slate-50 text-slate-900">
+    <main class="mx-auto max-w-3xl p-6">
+      <header id="main-header" class="mb-6 border-b pb-4">
+        <h1 class="text-3xl font-bold">DOM Fundamentals Lab</h1>
+        <p class="mt-2 text-slate-600">
+          Practice selecting elements and updating the live DOM.
+        </p>
+        <nav class="navbar mt-4 flex gap-4">
+          <a href="/" class="text-blue-700 underline">Home</a>
+          <a href="/about" class="text-blue-700 underline">About</a>
+          <a href="https://example.com" class="text-blue-700 underline">External</a>
+        </nav>
+      </header>
+
+      <section class="mb-8 rounded border bg-white p-4 shadow-sm">
+        <h2 id="page-title" class="text-xl font-semibold">Try the button</h2>
+        <p class="mt-2 text-slate-700">
+          Use JavaScript to change text and append new DOM elements.
+        </p>
+        <button
+          id="action-btn"
+          class="mt-4 rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
+          type="button"
+        >
+          Click me
+        </button>
+        <div id="output" class="mt-4 rounded border border-dashed border-slate-300 p-3"></div>
+      </section>
+
+      <section class="mb-8 rounded border bg-white p-4 shadow-sm">
+        <h2 class="text-xl font-semibold">Login Form</h2>
+        <form data-form-type="login" class="mt-4 grid gap-3">
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="rounded border border-slate-300 px-3 py-2"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            class="rounded border border-slate-300 px-3 py-2"
+          />
+          <button type="submit" class="btn primary rounded bg-slate-900 px-4 py-2 text-white">
+            Log In
+          </button>
+        </form>
+      </section>
+
+      <section class="grid gap-4 sm:grid-cols-2">
+        <div class="card rounded border bg-white p-4 shadow-sm" data-product-id="1">
+          <h3 class="card-title text-lg font-semibold" data-title-id="1">Product A</h3>
+          <p class="price mt-1 text-slate-700">$19.99</p>
+        </div>
+        <div class="card rounded border bg-white p-4 shadow-sm" data-product-id="2">
+          <h3 class="card-title text-lg font-semibold" data-title-id="2">Product B</h3>
+          <p class="price mt-1 text-slate-700">$29.99</p>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
